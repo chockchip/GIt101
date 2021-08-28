@@ -107,10 +107,10 @@ git push --set-upstream origin "branch name"
 Delete branch
 ////////////////////////////////////////////////////////////////////////////////
 1. Delete local branch
-git push -d "branchname"
+git branch -d "branchname"
 
 2. Delete remote branch
-git push -d origin "branchname"
+git push origin -delete "branchname"
 
 
 
