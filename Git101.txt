@@ -1,6 +1,162 @@
-Test
-test2
-Test3
-Test4
-subbug
-subbug2
+This document use to learning git command (develop101)
+
+////////////////////////////////////////////////////////////////////////////////
+Initial Git
+////////////////////////////////////////////////////////////////////////////////
+1. Initial Repository
+
+2. Setup username and email
+git config --global user.name "rusucosmin" 
+git config --global user.email "your-email@example.com"
+
+3. Clone project
+git clone https://github.com/dutylabs/git101
+
+4. Create local git
+git init
+
+5. Clone project
+git clone https://github.com/dutylabs/git101
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Check branch
+////////////////////////////////////////////////////////////////////////////////
+1. Check local branch
+git branch 
+
+2. Check remote branch
+git branch -r
+
+3. Check both remote and local branch
+git branch -a
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Check status & log
+////////////////////////////////////////////////////////////////////////////////
+1. Check bracnh status
+git status
+
+2. Check log
+git log
+
+3. Generate log graph
+git log --graph
+
+4. Generate log graph (more pretty)
+git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Add file and commit
+////////////////////////////////////////////////////////////////////////////////
+1. Add all change 
+git add .
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Un-update before commit
+////////////////////////////////////////////////////////////////////////////////
+1. Un-add all file but file still keep modified
+git reset
+
+2. Un-add specific file
+git reset "file name"
+
+3. Un-add all file and revert it back to lastest track
+git reset --hard
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Commit change
+////////////////////////////////////////////////////////////////////////////////
+1. Commit change
+git commit -m "comment of commit"
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Put change from local to remote
+////////////////////////////////////////////////////////////////////////////////
+1. Push from current local to current remote
+git push
+
+2. Push specific branch from local to remote
+git push origin "branch name"
+
+3. Push specific local to speicific remote
+git push origin daveleop:main
+
+
+////////////////////////////////////////////////////////////////////////////////
+Create remoter branch or track remote branch
+////////////////////////////////////////////////////////////////////////////////
+1. Create new remoter branch
+git push --set-upstream origin "branch name" 
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Change branch
+////////////////////////////////////////////////////////////////////////////////
+1. Change branch
+git checkout "branchName"
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Delete branch
+////////////////////////////////////////////////////////////////////////////////
+1. Delete local branch
+git branch -d "branchname"
+
+2. Delete remote branch
+git push origin -delete "branchname"
+
+
+
+
+
+
+
+
+
+
+9. git remove file from add
+git rm --cached <file_name>
+
+5. Pull change remote
+git pull origin "branchName" --> pull change from remote to current local branch 
+
+
+
+7. Merge
+- git merge "branchFeature" --> Merge feature branch to current checkout branch
+
+8. Checkout 
+git checkout <hash> --> Checkout with specific commit
+
+9. Revert
+git revert <hash> --> Revert all commit until specific commit
+# After revert have to do commit again
+
+10. Reset
+git reset --hard                --> Clear everything that does not commit
+git clean --fd
+
+11. Log
+git log --oneline --decorate --graph
+
+12. Stash
+- git stash save "stashName"
+- git stash list                --> Show stash list
+- git stash pop stash@{n}       --> Apply stash and remove stash from the list
+- git stash apply stash@{n}     --> Apply stash and remove stash from the lise
+>>>>>>> develop
