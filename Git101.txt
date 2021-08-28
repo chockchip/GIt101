@@ -104,6 +104,13 @@ git push --set-upstream origin "branch name"
 
 
 ////////////////////////////////////////////////////////////////////////////////
+Pull change from remote
+////////////////////////////////////////////////////////////////////////////////
+git pull origin "branchName"
+
+
+
+////////////////////////////////////////////////////////////////////////////////
 Change branch
 ////////////////////////////////////////////////////////////////////////////////
 1. Change branch
@@ -120,6 +127,8 @@ git branch -d "branchname"
 2. Delete remote branch
 git push origin -delete "branchname"
 
+
+
 ////////////////////////////////////////////////////////////////////////////////
 Merge branch
 ////////////////////////////////////////////////////////////////////////////////
@@ -129,35 +138,30 @@ git merge "branchName"
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+Stash
+////////////////////////////////////////////////////////////////////////////////
+Before stach have to add change first (git add .)
+
+1. Save stash
+git stash save "stashName"
+
+2. Show stash list
+git stash list
+
+3. Use stash and remove from the list
+git stash pop stash@{n}
+
+4. Use stash but doesn't remove from the list
+git stash apply stash@{n}
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+Revert the commit
+////////////////////////////////////////////////////////////////////////////////
+- Revert the commit by refer to use hash number 
+- Have to use git log for check hash number first 
 
-
-9. git remove file from add
-git rm --cached <file_name>
-
-5. Pull change remote
-git pull origin "branchName" --> pull change from remote to current local branch 
-
-
-
-8. Checkout 
-git checkout <hash> --> Checkout with specific commit
-
-9. Revert
-git revert <hash> --> Revert all commit until specific commit
-# After revert have to do commit again
-
-10. Reset
-git reset --hard                --> Clear everything that does not commit
-git clean --fd
-
-11. Log
-git log --oneline --decorate --graph
-
-12. Stash
-- git stash save "stashName"
-- git stash list                --> Show stash list
-- git stash pop stash@{n}       --> Apply stash and remove stash from the list
-- git stash apply stash@{n}     --> Apply stash and remove stash from the lise
+1. Revert code
+git revert "hashNumber"
