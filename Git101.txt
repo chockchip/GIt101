@@ -120,6 +120,11 @@ git branch -d "branchname"
 2. Delete remote branch
 git push origin -delete "branchname"
 
+////////////////////////////////////////////////////////////////////////////////
+Merge branch
+////////////////////////////////////////////////////////////////////////////////
+1. Merge specific branch to the current branch
+git merge "branchName"
 
 
 
@@ -136,9 +141,6 @@ git rm --cached <file_name>
 git pull origin "branchName" --> pull change from remote to current local branch 
 
 
-
-7. Merge
-- git merge "branchFeature" --> Merge feature branch to current checkout branch
 
 8. Checkout 
 git checkout <hash> --> Checkout with specific commit
