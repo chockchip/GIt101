@@ -66,9 +66,11 @@ git commit -m "comment of commit"
 Put chnage from local to remote
 ////////////////////////////////////////////////////////////////////////////////
 
-1. Push from local to remote
+1. Push from main local to main remote
 git push
 
+2. Push from local to specific remote
+git push origin "branch name"
 
 
 
