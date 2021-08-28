@@ -1,21 +1,66 @@
-1. Initial repository
+This document use to learning git command
+
+////////////////////////////////////////////////////////////////////////////////
+Initial Git
+////////////////////////////////////////////////////////////////////////////////
+
+1. Initial Repository
 
 2. Setup username and email
-git config --global user.name "rusucosmin" #change this to yours
+git config --global user.name "rusucosmin" 
 git config --global user.email "your-email@example.com"
 
-3. Confirm your username and email
-git config --global user.name
-git config --global user.email
+3. Clone project
+git clone https://github.com/dutylabs/git101
 
 4. Create local git
 git init
 
-4. Clone project
+5. Clone project
 git clone https://github.com/dutylabs/git101
 
-5. Branch
-git branch --> check all branch on local
+////////////////////////////////////////////////////////////////////////////////
+Check branch
+////////////////////////////////////////////////////////////////////////////////
+
+1. Check local branch
+git branch 
+
+2. Check remote branch
+git branch -r
+
+3. Check both remote and local branch
+git branch -a
+
+////////////////////////////////////////////////////////////////////////////////
+Check status & log
+////////////////////////////////////////////////////////////////////////////////
+
+1. Check bracnh status
+git status
+
+2. Check log
+git log
+
+3. Generate log graph
+git log --graph
+
+4. Generate log graph (more pretty)
+git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"
+
+////////////////////////////////////////////////////////////////////////////////
+Add file and commit
+////////////////////////////////////////////////////////////////////////////////
+
+1. Add all change 
+git add .
+
+
+
+
+
+
+
 git checkout "branchName" --> Change branch to local/remote branch
 
 6. Create branch
@@ -68,12 +113,3 @@ git log --oneline --decorate --graph
 - git stash list                --> Show stash list
 - git stash pop stash@{n}       --> Apply stash and remove stash from the list
 - git stash apply stash@{n}     --> Apply stash and remove stash from the lise
-
-13. Check status
-- git status
-
-14. brnch history by graph
-- git lg
-
-15. branch history
-- git log
