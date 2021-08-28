@@ -62,7 +62,10 @@ Un-update before commit
 1. Un-add all file but file still keep modified
 git reset
 
-2. Un-add all file and revert it back to lastest track
+2. Un-add specific file
+git reset "file name"
+
+3. Un-add all file and revert it back to lastest track
 git reset --hard
 
 ////////////////////////////////////////////////////////////////////////////////
