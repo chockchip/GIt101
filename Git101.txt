@@ -73,14 +73,17 @@ Commit change
 git commit -m "comment of commit"
 
 ////////////////////////////////////////////////////////////////////////////////
-Put chnage from local to remote
+Put change from local to remote
 ////////////////////////////////////////////////////////////////////////////////
 
-1. Push from main local to main remote
+1. Push from current local to current remote
 git push
 
 2. Push from local to specific remote
 git push origin "branch name"
+
+3. Push specific local to speicific remote
+git push origin daveleop:main
 
 ////////////////////////////////////////////////////////////////////////////////
 Create remoter branch or track remote branch
