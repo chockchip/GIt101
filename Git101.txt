@@ -79,7 +79,7 @@ Put change from local to remote
 1. Push from current local to current remote
 git push
 
-2. Push from local to specific remote
+2. Push specific branch from local to remote
 git push origin "branch name"
 
 3. Push specific local to speicific remote
