@@ -1,4 +1,4 @@
-This document use to learning git command (develop)
+This document use to learning git command (develop101)
 
 ////////////////////////////////////////////////////////////////////////////////
 Initial Git
