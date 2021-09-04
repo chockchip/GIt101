@@ -89,7 +89,7 @@ git push
 
 2. Push specific branch from local to remote
 git push origin "branch name"
-
+cartoon_scrapping.py
 3. Push specific local to speicific remote
 git push origin daveleop:main
 
@@ -134,6 +134,14 @@ Merge branch
 ////////////////////////////////////////////////////////////////////////////////
 1. Merge specific branch to the current branch
 git merge "branchName"
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+Check different
+////////////////////////////////////////////////////////////////////////////////
+1. check different between branch
+git diff origin/main main
 
 
 
